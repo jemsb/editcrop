@@ -1,0 +1,27 @@
+appId: com.folioscan.desktop
+productName: FolioScan
+directories:
+  output: release
+files:
+  - dist/**/*
+  - electron/**/*
+  - package.json
+asar: true
+asarUnpack:
+  - dist/tesseract/**/*
+  - dist/tessdata/**/*
+win:
+  icon: public/pwa-512x512.png
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true

@@ -1,0 +1,8 @@
+{
+  "name": "FolioScan",
+  "description": "Offline-capable A4 and A5 document scanner, perspective corrector, image cleaner, and local OCR studio.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": []
+}
